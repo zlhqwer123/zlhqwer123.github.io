@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World001","path":"2023/07/05/ceshi/"},{"title":"Hello World","path":"2023/07/04/hello-world/"}]`)
+  const posts = JSON.parse(`[{"title":"Hello World001","path":"2023/07/05/ceshi/"},{"title":"小张杂记（初测）","path":"2023/07/04/hello-world/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -264,7 +264,7 @@
         </a>
         <a href="/tags">
           <div>
-            <span>0</span>
+            <span>1</span>
             <span>标签</span>
           </div>
         </a>
@@ -335,7 +335,7 @@
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
-        <span>1天</span>
+        <span>2天</span>
       </p>
       <p class="main-left--subtitle">
         <span>当前版本：</span>
@@ -375,9 +375,13 @@
           <img class="index-article--cover" data-cover="imgs/default-cover.webp" alt="">
         </div>
         <div class="index-article--content">
-          <a href="/2023/07/04/hello-world/">Hello World </a>
+          <a href="/2023/07/04/hello-world/">小张杂记（初测） </a>
           <div>
             
+            
+              <p>
+                <a class="-link" href="/tags/%E7%AC%91%E8%B0%88/" rel="tag">笑谈</a>
+              </p>
             
           </div>
           <div class="bg"></div>
@@ -388,7 +392,7 @@
   <div class="index-right">
     <div class="index-right-wrapper">
       
-      
+      <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%91%E8%B0%88/" rel="tag">笑谈</a></li></ul>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">2023年07月</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
@@ -462,7 +466,7 @@
       <i class="iconfont icon-gonggao"></i>
     </div>
     <div class="main-right--content">
-      Hello~大噶好。唔系一名快乐的小阿斗，欢迎你来到我的小窝窝！ 
+      Hello~欢迎来的我的小屋！ 
     </div>
   </div>
 
@@ -516,7 +520,7 @@
   }
 
   setOperateItem()
-  const musics = JSON.parse(`[{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"卡布达","artist":"暂无","url":"music/kabuda.mp3","cover":"https://img2.baidu.com/it/u=705831265,2862720033&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"八连杀","artist":"苏三","url":"music/八连杀.mp3","cover":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0SWQx6YrNA8lElaG4OOKLkNkNzLO1PflKg&usqp=CAU"}]`)
+  const musics = JSON.parse(`[{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"卡布达","artist":"暂无","url":"music/kabuda.mp3","cover":"https://img2.baidu.com/it/u=705831265,2862720033&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"沈剑心","artist":"剑网3","url":"music/在下，沈剑心！.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000000vKhDi31Cwdt_1.jpg?max_age=2592000"}]`)
   const ap = new APlayer({
     container: document.querySelector('#aplayer'),
     audio: musics,
