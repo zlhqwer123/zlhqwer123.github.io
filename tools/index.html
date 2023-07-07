@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Z魈张不要熬夜♥ | Zhangxz</title>
+  <title>Z魈张不要熬夜tools | Zhangxz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="/imgs/shortcut-icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/public.css" />
@@ -16,7 +16,7 @@
 
   <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   <script>
-    document.title = `Z魈张不要熬夜♥`
+    document.title = `Z魈张不要熬夜tools`
   </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
@@ -346,118 +346,39 @@
 </div></div>
       <div id="main-container" class="main-container">
 
-    
 
-<div class="index">
-  <div class="index-left">
+  
+
+<div class="tools">
+  <h2 class="tools-title">我的自制工具列表...</h2>
+  <ul class="tools-list">
     
-      <div class="index-article">
-        <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
-        <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/default-cover.webp" alt="">
-        </div>
-        <div class="index-article--content">
-          <a href="/2023/07/05/ceshi/">Hello World001 </a>
+      <li>
+        <img class="tool-cover" src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/30e94204580a4dbd83a64d4f91a9a6e5~tplv-k3u1fbpfcp-no-mark:240:240:240:160.awebp?" alt="">
+        <div class="tool-info">
           <div>
-            
-            
+            <p class="tool-title">PNG图片压缩器</p>
+            <p class="tool-intro">这是一款无损压缩PNG图片的在线工具，可以童工上传或拖动来批量压缩图片并打包下载</p>
           </div>
-          <div class="bg"></div>
+          <a class="tool-link" href="http://1.14.43.39:5000/" target="_blank">前往使用>></a>
         </div>
-      </div>
+      </li>
     
-  </div>
-  <div class="index-center">
-    
-      <div class="index-article">
-        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
-        <div class="index-article--box">
-          <img class="index-article--cover" data-cover="imgs/default-cover.webp" alt="">
-        </div>
-        <div class="index-article--content">
-          <a href="/2023/07/04/hello-world/">小张杂记（初测） </a>
+      <li>
+        <img class="tool-cover" src="https://coke-cola.gitee.io/resume-page/assets/dark-f439b888.jpeg" alt="">
+        <div class="tool-info">
           <div>
-            
-            
-              <p>
-                <a class="-link" href="/tags/%E7%AC%91%E8%B0%88/" rel="tag">笑谈</a>
-              </p>
-            
+            <p class="tool-title">在线简历生成器</p>
+            <p class="tool-intro">一个免费的在线简历生成工具</p>
           </div>
-          <div class="bg"></div>
+          <a class="tool-link" href="https://coke-cola.gitee.io/resume-page/#/" target="_blank">前往使用>></a>
         </div>
-      </div>
+      </li>
     
-  </div>
-  <div class="index-right">
-    <div class="index-right-wrapper">
-      
-      <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%91%E8%B0%88/" rel="tag">笑谈</a></li></ul>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">2023年07月</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-  </div>
+  </ul>
 </div>
 
 
-<script>
-  var allImgBoxs = document.querySelectorAll('.index-article--box');
-  var windowHeight = window.innerHeight;
-  var boxs = Array.from(allImgBoxs);
-  var timer = null;
-  boxs.forEach((box, idx) => {
-    if (!window.loadImageSet || !window.loadImageSet.includes(idx)) {
-      box.classList.add('img-loading');
-    } else {
-      const imgDom = box.querySelector('img');
-      imgDom.src = imgDom.dataset.cover;
-    }
-  });
-
-  function scrollFn() {
-    if (timer) {
-      return;
-    }
-    timer = setTimeout(() => {
-      loadImage();
-      timer = null;
-    }, 100)
-  }
-
-  if (!window.loadedImage) {
-    document.addEventListener('scroll', scrollFn);
-  }
-
-  function loadImage() {
-    const doc = document.documentElement;
-    const scrollTop = doc.scrollTop;
-    if (boxs.every(box => box.loadedImage)) {
-      document.removeEventListener('scroll', scrollFn);
-      window.loadedImage = 1;
-      return;
-    }
-    boxs.forEach((box, idx) => {
-      if (box.loadedImage) {
-        return;
-      }
-      if (box.getBoundingClientRect().top < windowHeight) {
-        const imgDom = box.querySelector('img');
-        imgDom.src = imgDom.dataset.cover;
-        imgDom.onload = () => {
-          box.classList.remove('img-loading')
-          box.loadedImage = true;
-          if (window.loadImageSet) {
-            window.loadImageSet.push(idx);
-          } else {
-            window.loadImageSet = [];
-            window.loadImageSet.push(idx);
-          }
-        }
-      }
-    });
-  }
-
-  window.loadImageFn = loadImage;
-</script> 
 </div>
       <div class="main-right-wrapper"><div class="main-right">
   <div class="main-right--board">
