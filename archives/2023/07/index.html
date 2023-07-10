@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World001","path":"2023/07/05/ceshi/"},{"title":"小张杂记（初测）","path":"2023/07/04/hello-world/"}]`)
+  const posts = JSON.parse(`[{"title":"侃侃而谈","path":"2020/05/05/曾不想/"},{"title":"没用的小知识","path":"2023/07/05/没用的小知识/"},{"title":"小张杂记（初测）","path":"2023/07/04/笑谈/"},{"title":"Hello World","path":"2023/07/05/测试/"},{"title":"英语笔记","path":"2023/06/12/英语文本/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -264,13 +264,13 @@
         </a>
         <a href="/tags">
           <div>
-            <span>1</span>
+            <span>3</span>
             <span>标签</span>
           </div>
         </a>
         <a href="/archives">
           <div>
-            <span>1 </span>
+            <span>3 </span>
             <span>归档</span>
           </div>
         </a>
@@ -327,7 +327,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>2 篇</span>
+        <span>5 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
@@ -335,7 +335,7 @@
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
-        <span>2天</span>
+        <span>5天</span>
       </p>
       <p class="main-left--subtitle">
         <span>当前版本：</span>
@@ -357,9 +357,28 @@
           <img class="index-article--cover" data-cover="imgs/default-cover.webp" alt="">
         </div>
         <div class="index-article--content">
-          <a href="/2023/07/05/ceshi/">Hello World001 </a>
+          <a href="/2023/07/05/%E6%B2%A1%E7%94%A8%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86/">没用的小知识 </a>
           <div>
             
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
+      <div class="index-article">
+        <!-- <img class="index-article--cover" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/default-cover.webp" alt="">
+        </div>
+        <div class="index-article--content">
+          <a href="/2023/07/04/%E7%AC%91%E8%B0%88/">小张杂记（初测） </a>
+          <div>
+            
+            
+              <p>
+                <a class="-link" href="/tags/%E7%AC%91%E8%B0%88/" rel="tag">笑谈</a>
+              </p>
             
           </div>
           <div class="bg"></div>
@@ -375,13 +394,9 @@
           <img class="index-article--cover" data-cover="imgs/default-cover.webp" alt="">
         </div>
         <div class="index-article--content">
-          <a href="/2023/07/04/hello-world/">小张杂记（初测） </a>
+          <a href="/2023/07/05/%E6%B5%8B%E8%AF%95/">Hello World </a>
           <div>
             
-            
-              <p>
-                <a class="-link" href="/tags/%E7%AC%91%E8%B0%88/" rel="tag">笑谈</a>
-              </p>
             
           </div>
           <div class="bg"></div>
@@ -392,8 +407,8 @@
   <div class="index-right">
     <div class="index-right-wrapper">
       
-      <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%91%E8%B0%88/" rel="tag">笑谈</a></li></ul>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">2023年07月</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%91%E8%B0%88/" rel="tag">笑谈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%87%E6%9C%AC/" rel="tag">升本</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">2023年07月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">2023年06月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">2020年05月</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 </div>
