@@ -37,19 +37,19 @@
   .load-circle {
     width: 80px;
     height: 80px;
-    border: 8px solid orange;
+    border: 8px solid rgb(255, 255, 255);
     border-bottom-color: transparent;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: rotate 1s linear infinite;
-    filter: drop-shadow(0 0 3px orange);
+    filter: drop-shadow(0 0 3px rgb(255, 255, 255));
   }
   .load-circle-inner {
     width: 40px;
     height: 40px;
-    border: 8px solid orange;
+    border: 8px solid rgb(249, 241, 0);
     border-top-color: transparent;
     border-radius: 50%;
     animation: rotate-reverse .5s linear infinite;
@@ -57,12 +57,12 @@
   .load-text {
     margin-top: 20px;
     font-size: 24px;
-    color: orange;
+    color: rgb(0, 250, 250);
     display: flex;
   }
   .load-text span {
     margin: 0 5px;
-    text-shadow: 5px 5px 5px orange;
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
     animation: move 1s linear infinite;
   }
   .load-text span:nth-child(1) {
@@ -204,7 +204,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"<没用的小知识>","path":"2023/08/03/没用的小知识/"},{"title":"<如何搭建hexo博客>","path":"2023/08/03/hexo博客的搭建/"},{"title":"侃侃而谈","path":"2020/05/05/曾不想/"},{"title":"Hello World","path":"2023/07/05/测试/"},{"title":"小张杂记（初测）","path":"2023/08/03/笑谈/"},{"title":"<计算机系统结构>","path":"2023/08/03/计算机系统的结构/"},{"title":"英语笔记","path":"2023/06/12/英语文本/"}]`)
+  const posts = JSON.parse(`[{"title":"侃侃而谈","path":"2020/05/05/曾不想/"},{"title":"Hello World","path":"2023/07/05/测试/"},{"title":"<没用的小知识>","path":"2023/08/03/没用的小知识/"},{"title":"<如何搭建hexo博客>","path":"2023/08/03/hexo博客的搭建/"},{"title":"英语笔记","path":"2023/06/12/英语文本/"},{"title":"小张杂记（初测）","path":"2023/08/03/笑谈/"},{"title":"<计算机系统结构>","path":"2023/08/03/计算机系统的结构/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -269,13 +269,13 @@
       <div class="main-left--statics">
         <a href="/categories">
           <div>
-            <span>1</span>
+            <span>4</span>
             <span>分类</span>
           </div>
         </a>
         <a href="/tags">
           <div>
-            <span>5</span>
+            <span>3</span>
             <span>标签</span>
           </div>
         </a>
@@ -342,11 +342,11 @@
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
-        <span>2天前</span>
+        <span>今天</span>
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
-        <span>38天</span>
+        <span>40天</span>
       </p>
       <p class="main-left--subtitle">
         <span>当前版本：</span>
@@ -498,7 +498,7 @@ pre:active {
       <i class="iconfont icon-gonggao"></i>
     </div>
     <div class="main-right--content">
-      Hello~欢迎来的我的小屋！ 
+      Hello~欢迎来的我的小屋！ ：） 
     </div>
   </div>
 
@@ -522,7 +522,7 @@ pre:active {
       <p>Power By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a>.</p>
       <p>Theme：<a target="_blank" rel="noopener" href="https://github.com/Aizener/hexo-theme-cola">Zhangxz</a></p>
     </div>
-    <p class="main-right--refer"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/Integrated/index">蜀ICP备2022005384号-1</a> </p>
+    <p class="main-right--refer"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/Integrated/index">蜀ICP备2021021560号-1</a> </p>
   </div>
 </div>
 

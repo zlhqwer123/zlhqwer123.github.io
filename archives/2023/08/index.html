@@ -37,19 +37,19 @@
   .load-circle {
     width: 80px;
     height: 80px;
-    border: 8px solid orange;
+    border: 8px solid rgb(255, 255, 255);
     border-bottom-color: transparent;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: rotate 1s linear infinite;
-    filter: drop-shadow(0 0 3px orange);
+    filter: drop-shadow(0 0 3px rgb(255, 255, 255));
   }
   .load-circle-inner {
     width: 40px;
     height: 40px;
-    border: 8px solid orange;
+    border: 8px solid rgb(249, 241, 0);
     border-top-color: transparent;
     border-radius: 50%;
     animation: rotate-reverse .5s linear infinite;
@@ -57,12 +57,12 @@
   .load-text {
     margin-top: 20px;
     font-size: 24px;
-    color: orange;
+    color: rgb(0, 250, 250);
     display: flex;
   }
   .load-text span {
     margin: 0 5px;
-    text-shadow: 5px 5px 5px orange;
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
     animation: move 1s linear infinite;
   }
   .load-text span:nth-child(1) {
@@ -204,7 +204,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"<没用的小知识>","path":"2023/08/03/没用的小知识/"},{"title":"<如何搭建hexo博客>","path":"2023/08/03/hexo博客的搭建/"},{"title":"侃侃而谈","path":"2020/05/05/曾不想/"},{"title":"Hello World","path":"2023/07/05/测试/"},{"title":"小张杂记（初测）","path":"2023/08/03/笑谈/"},{"title":"<计算机系统结构>","path":"2023/08/03/计算机系统的结构/"},{"title":"英语笔记","path":"2023/06/12/英语文本/"}]`)
+  const posts = JSON.parse(`[{"title":"侃侃而谈","path":"2020/05/05/曾不想/"},{"title":"Hello World","path":"2023/07/05/测试/"},{"title":"<没用的小知识>","path":"2023/08/03/没用的小知识/"},{"title":"<如何搭建hexo博客>","path":"2023/08/03/hexo博客的搭建/"},{"title":"英语笔记","path":"2023/06/12/英语文本/"},{"title":"小张杂记（初测）","path":"2023/08/03/笑谈/"},{"title":"<计算机系统结构>","path":"2023/08/03/计算机系统的结构/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -269,13 +269,13 @@
       <div class="main-left--statics">
         <a href="/categories">
           <div>
-            <span>1</span>
+            <span>4</span>
             <span>分类</span>
           </div>
         </a>
         <a href="/tags">
           <div>
-            <span>5</span>
+            <span>3</span>
             <span>标签</span>
           </div>
         </a>
@@ -342,11 +342,11 @@
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
-        <span>2天前</span>
+        <span>今天</span>
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
-        <span>38天</span>
+        <span>40天</span>
       </p>
       <p class="main-left--subtitle">
         <span>当前版本：</span>
@@ -371,10 +371,10 @@
           <a href="/2023/08/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%BB%93%E6%9E%84/"><计算机系统结构> </a>
           <div>
             
-            
               <p>
-                <a class="-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a>
+                <a class="post-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
               </p>
+            
             
           </div>
           <div class="bg"></div>
@@ -389,6 +389,10 @@
         <div class="index-article--content">
           <a href="/2023/08/03/%E6%B2%A1%E7%94%A8%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86/"><没用的小知识> </a>
           <div>
+            
+              <p>
+                <a class="post-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+              </p>
             
             
           </div>
@@ -408,9 +412,13 @@
           <a href="/2023/08/03/%E7%AC%91%E8%B0%88/">小张杂记（初测） </a>
           <div>
             
+              <p>
+                <a class="category-link" href="/categories/%E6%97%A5%E8%AE%B0/">日记</a>
+              </p>
+            
             
               <p>
-                <a class="-link" href="/tags/%E7%AC%91%E8%B0%88/" rel="tag">笑谈</a>
+                <a class="-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a>
               </p>
             
           </div>
@@ -444,8 +452,8 @@
   </div>
   <div class="index-right">
     <div class="index-right-wrapper">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a></li></ul>
-      <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%91%E8%B0%88/" rel="tag">笑谈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%87%E6%9C%AC/" rel="tag">升本</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nodejs-git/" rel="tag">Nodejs+git</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%87%E6%9C%AC/">升本</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E8%AE%B0/">日记</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a></li></ul>
+      <ul class="tags" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8B%B1%E8%AF%AD/" rel="tag">英语</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%AE%B0/" rel="tag">杂记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nodejs-git/" rel="tag">Nodejs+git</a></li></ul>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">2023年08月</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">2023年07月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">2023年06月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">2020年05月</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
@@ -519,7 +527,7 @@
       <i class="iconfont icon-gonggao"></i>
     </div>
     <div class="main-right--content">
-      Hello~欢迎来的我的小屋！ 
+      Hello~欢迎来的我的小屋！ ：） 
     </div>
   </div>
 
@@ -543,7 +551,7 @@
       <p>Power By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a>.</p>
       <p>Theme：<a target="_blank" rel="noopener" href="https://github.com/Aizener/hexo-theme-cola">Zhangxz</a></p>
     </div>
-    <p class="main-right--refer"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/Integrated/index">蜀ICP备2022005384号-1</a> </p>
+    <p class="main-right--refer"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/Integrated/index">蜀ICP备2021021560号-1</a> </p>
   </div>
 </div>
 
