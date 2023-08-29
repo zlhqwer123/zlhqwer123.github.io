@@ -174,6 +174,7 @@
             <span class="header-menu--span">日志</span>
           </a>
         </li>
+        
         <li>
           <a href="/link">
             <i class="header-menu--icon iconfont icon-youqinglianjie"></i>
@@ -187,7 +188,14 @@
             <span class="header-menu--span">关于我</span>
           </a>
         </li>
-<!-- 可注销 -->
+
+        <!-- <li>
+          <a href="/message">
+            <i class="header-menu--icon iconfont icon-guanyuwomen"></i>
+            <span class="header-menu--span">测试</span>
+          </a>
+        </li> -->
+<!-- 可注销工具 -->
         <li>
             <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;
               <i class="iconfont icon-light" id="color-toggle-icon" data="dark"></i>
@@ -204,7 +212,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"侃侃而谈","path":"2020/05/05/曾不想/"},{"title":"Hello World","path":"2023/07/05/测试/"},{"title":"<没用的小知识>","path":"2023/08/03/没用的小知识/"},{"title":"<如何搭建hexo博客>","path":"2023/08/03/hexo博客的搭建/"},{"title":"英语笔记","path":"2023/06/12/英语文本/"},{"title":"小张杂记（初测）","path":"2023/08/03/笑谈/"},{"title":"<计算机系统结构>","path":"2023/08/03/计算机系统的结构/"}]`)
+  const posts = JSON.parse(`[{"title":"<如何搭建hexo博客>","path":"2023/08/03/hexo博客的搭建/"},{"title":"侃侃而谈","path":"2020/05/05/曾不想/"},{"title":"<没用的小知识>","path":"2023/08/03/没用的小知识/"},{"title":"Hello World","path":"2023/07/05/测试/"},{"title":"小张杂记（初测）","path":"2023/08/03/笑谈/"},{"title":"<计算机系统结构>","path":"2023/08/03/计算机系统的结构/"},{"title":"英语笔记","path":"2023/06/12/英语文本/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -346,7 +354,7 @@
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
-        <span>40天</span>
+        <span>55天</span>
       </p>
       <p class="main-left--subtitle">
         <span>当前版本：</span>
@@ -619,7 +627,7 @@
   }
 
   setOperateItem()
-  const musics = JSON.parse(`[{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"让我欢喜让我忧","artist":"薛之谦","url":"http://m701.music.126.net/20230811173837/fa29007c49d8f7724a138c6fe12f2e87/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/29593286843/ec77/50ac/a6cc/41a945db693cee84b878896ba2f1ece7.mp3","cover":"http://p1.music.126.net/pcLw5yHiBNMBAby1WTt2wg==/109951168769529178.jpg?param=130y130"},{"name":"四海","artist":"痛仰乐队","url":"http://cy-sycdn.kuwo.cn/4d8c41b7422bd919e40c27804b3dad12/64d5fb57/resource/n1/66/0/2019418344.mp3?bitrate$128&amp;format$mp3&amp;type$convert_url2","cover":"http://p2.music.126.net/b7bpGmO31J8UvmcpxFiqKA==/109951167032383322.jpg?param=130y130"},{"name":"幸存者","artist":"林俊杰","url":"music/林俊杰 - 幸存者.mp3","cover":"https://bkimg.cdn.bcebos.com/pic/810a19d8bc3eb13533fab4fcf954bfd3fd1f4134ee68?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_auto"},{"name":"最向往的地方","artist":"林俊杰","url":"music/林俊杰 - 最向往的地方.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000000vKhDi31Cwdt_1.jpg?max_age=2592000"},{"name":"交换余生","artist":"林俊杰","url":"music/林俊杰 - 交换余生.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000000vKhDi31Cwdt_1.jpg?max_age=2592000"},{"name":"花间酒","artist":"澄海橘子","url":"http://m10.music.126.net/20230811173958/a3d4d7e30dbc82e751ceffdb09ef8b8f/ymusic/obj/w5zDlMODwrDDiGjCn8Ky/2999792978/58ac/7ca0/de63/b1603c7b1e855751faf8eb692cedd409.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000000vKhDi31Cwdt_1.jpg?max_age=2592000"},{"name":"晚风","artist":"boy7","url":"http://m801.music.126.net/20230811172205/6acaa67cb2860d8704ce7f5a8907ddce/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096431911/f66a/74d2/d8f4/480f7bf07d7e7897d35898c1c05421ad.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000000vKhDi31Cwdt_1.jpg?max_age=2592000"},{"name":"Like I love You","artist":"LOVE","url":"music/like I love You.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000001UgglI3buWPr_1.jpg?max_age=2592000"}]`)
+  const musics = JSON.parse(`[{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"幸存者","artist":"林俊杰","url":"music/林俊杰 - 幸存者.mp3","cover":"https://bkimg.cdn.bcebos.com/pic/810a19d8bc3eb13533fab4fcf954bfd3fd1f4134ee68?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_auto"},{"name":"Like I love You","artist":"LOVE","url":"music/like I love You.mp3","cover":"https://y.qq.com/music/photo_new/T002R300x300M000001UgglI3buWPr_1.jpg?max_age=2592000"}]`)
   const ap = new APlayer({
     container: document.querySelector('#aplayer'),
     audio: musics,
@@ -733,16 +741,17 @@
       // $('.main-container').fadeIn()
     })
   </script>
-  <!-- 页面点击小红心 -->
+  
+<!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/love.js"></script>
 <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
 <!-- 爆炸 -->
-<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-<script type="text/javascript" src="/js/fireworks.js"></script>
+<!-- <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/fireworks.js"></script> -->
 <!--动态线条背景-->
-<!-- <script type="text/javascript"
+<script type="text/javascript"
 color="220,220,220" opacity='1' zIndex="0" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
-</script> -->
+</script>
 <!-- 雪花特效 -->
 <script type="text/javascript" src="\js\snow.js"></script>
 
